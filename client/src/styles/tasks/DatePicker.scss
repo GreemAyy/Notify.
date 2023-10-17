@@ -1,0 +1,68 @@
+.date-picker-value{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.date-picker-block{
+    position: relative;
+}
+
+.date-picker-calendar{
+    position: absolute;
+    width: 300%;
+    left: -100%;
+    margin: 10px 0 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.date-picker-month{
+    font-size: 25px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.date-picker-arrow{
+    cursor: pointer;
+    font-weight: 300;
+    transition: all .3s;
+    &:hover{
+        font-weight: 800;
+    }
+}
+
+.date-picker-days{
+    display: flex;
+    justify-content: space-between ;
+    font-size: 22.5px;
+    opacity: .7;
+}
+
+.date-picker-calendar-block{
+    display: flex;
+    flex-direction: column;
+}
+
+.data-picker-calendar-row{
+    display: flex;
+}
+
+.data-picker-calendar-item{
+    width: calc(100%/7);
+    text-align: center;
+    font-size: 25px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+@media (prefers-color-scheme: light) {
+    .date-picker-calendar{
+        background-color: var(--light-theme-background);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .date-picker-calendar{
+        background-color: var(--dark-theme-background);
+    }
+}

@@ -1,0 +1,58 @@
+.log-reg-block{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid grey;
+    *{
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
+
+.log-reg-header{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.log-reg-header-text{
+    font-weight: 600;
+    margin: 5px 10px;
+}
+
+.log-reg-header-input{
+    border: 1px solid grey;
+    padding: 0px 10px;
+    border-radius: 20px;
+}
+
+.btn-log-reg{
+    cursor: pointer;
+    width: 100%;
+    padding: 0px 0;
+    border-radius: 20px;
+    font-weight: 700;
+    margin: 10px 0 0;
+    padding: 0 0 3px 0;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+.log-reg-in{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.error-item{
+    margin-top: 5px;
+    font-size: 15px;
+    color: red;
+    text-align: center;
+}

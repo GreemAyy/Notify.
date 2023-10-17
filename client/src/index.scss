@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root{
+  --primary-color:rgb(67, 154, 255);
+  --light-theme-text-color:black;
+  --light-theme-background:white;
+  --dark-theme-text-color:white;
+  --dark-theme-background:rgb(56, 56, 56);
+  --light-darker:rgb(223, 223, 223);
+  --dark-lighter:rgb(78, 78, 78);
+}
+
+a{
+  text-decoration: none;
+  display: block;
+}
+
+body{
+  transition: all .3s;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.less-light{
+ background-color: var(--light-darker);
+}
+
+.less-dark{
+  background-color: var(--dark-lighter);
+}
+
+.dark-theme{
+  background-color: var(--dark-theme-background);
+  color: var(--dark-theme-text-color);
+  a,input, textarea{
+    color: var(--dark-theme-text-color);
+    background-color: var(--dark-theme-background);
+  }
+}
+
+.light-theme{
+  background-color: var(--light-theme-background);
+  color: var(--light-theme-text-color);
+  a,input, textarea{
+    color: var(--light-theme-text-color);
+    background-color: var(--light-theme-background);
+  }
+}

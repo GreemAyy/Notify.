@@ -1,0 +1,144 @@
+.side-bar{
+    margin: 20px;
+    border-radius: 25px;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+
+
+.side-bar-header{
+    font-size: 40px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.btn-create-task{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    border-radius: 20px;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 5px 10px;
+    align-items: center;
+    color: white;
+    transition: all .5s;
+    cursor: pointer;
+    &:hover{
+        .plus-icon{
+            transform: rotate(-45deg);
+        }
+        opacity: .9;
+    }
+    span{
+        margin: 0 10px;
+    }
+    .plus-icon{
+        background-color: white;
+        color: var(--primary-color);
+        font-weight: 700;
+        padding: 1px 15px 1px;
+        border-radius: 50%;
+        transition: all .5s;
+    }
+}
+
+.side-bar-block{
+    position: fixed;
+    width:20%;
+    transition: all .5s;
+}
+
+.task-editor{
+    transition: all .3s;
+    overflow-y: scroll;
+    max-width: 100%;
+    max-height: 75vh;
+    margin: 0 20px 20px;
+    border-radius: 25px;
+    padding: 15px;
+    justify-content: space-between;
+    &::-webkit-scrollbar {
+        width: 0;
+      }
+}
+
+.task-editor-title{
+    margin: 7.5px 0 2.5px;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.task-editor-input{
+    font-size: 30px;
+    width: 100%;
+    padding: 0 2px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.task-editor-textarea{
+    font-size: 30px;
+    width: 100%;
+    border-radius: 10px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.date{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0 0;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.show-calendar-btn{
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    padding: 2.5px 10px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.react-calendar{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.date{
+    input{
+        font-size: 25px;
+        border: 1px solid gray;
+        border-radius: 15px;
+        padding: 0 5px;
+        width: 100%;
+    }
+}
+.date-title{
+    font-weight: 300;
+}
+
+.data-time-picker{
+    display: flex;
+    align-items: center;
+}
+
+.btn-create-new-task{
+    background-color: var(--primary-color);
+    text-align: center;
+    font-size: 35px;
+    cursor: pointer;
+    font-weight: 700;
+    margin: 10px 0 0;
+    border-radius: 15px;
+    transition: all .3s;
+    &:hover{
+        opacity: .8;
+    }
+}
